@@ -4,42 +4,39 @@
 
 Test object: Monefy Android App for Android, lite (free) version
 
-Tools for testing: No specific tools (*). The test sessions will be executed with the app installed on a real mobile phone, downloaded directly from the Google Play Store.
-
-
+Tools for testing: Xray Exploratory App
+The test sessions will be executed with the app installed on a real mobile phone, downloaded directly from the Google Play Store.
 
 ## Charters
 
 ### Charter 1 - New incomes\expenses
-
-Explore new incomes\expenses with a mobile app to discover if the stored data is consistent with the user data
+Explore new incomes and new expenses to verify if the stored data is consistent with the user data
 
 Time limit: 45 min
 
 ### Charter 2 - Data Backup
-
-Explore the Data Backup section with a mobile app to discover that the backup function is reliable
+Explore the Data Backup section to verify if the backup function is reliable
 
 The Data Backup can be found at: Options Menu- Settings -  Data Backup
 
 Time limit: 45 min
 
 ### Charter 3 - Balance Chart
-
-Explore the balance chart with a mobile app to discover that its usage is intuitive and user-friendly.
+Explore the balance chart to check its usage is intuitive and user-friendly.
 
 Time limit: 45 min
-
 
 ## Findings from the charters.
 
 ### Charter 1
+I missed that the currency couldn't be displayed using the currency default decimal separator. For instance, 100 Brazilian reais are usually expressed as R$100,00, but this doesn't happen in the app.
 
-I missed that the currency couldn't be displayed using the currency default decimal separator. For instance, 100 Brazilian reais are expressed as R$100,00, but this doesn't happen in the app.
+### Charter 2
+Timestamps are stored using the regional format of the system. It's better to transform timestamps into a standard format.
 
-### Charter 2 & 3
-No relevant findings
-
+### Charter 3
+* Resizing the chart was annoying and not the most intuitive.
+* Rotating the screen caused the chart to display some elements out of their correct place for milliseconds after te rotaion. It was fixed after less than a second.
 
   
 ## Prioritisation
@@ -74,9 +71,3 @@ As mentioned in the charters themselves, 45 minutes for each. It's not the stand
 ## What kind of risks you need to mitigate for this type of application?
 
 Functionality risks, UI-based risks, storage risks, security risks.
-
-
-## References
-(*) Xray Exploratory App is a great tool for this purpose but I used it just as a time measurer.
-XRay Exploratory App:
-![image](https://user-images.githubusercontent.com/13575588/114447446-b6f6d800-9bd2-11eb-923d-edcd05b201a6.png)
