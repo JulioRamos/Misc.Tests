@@ -35,7 +35,7 @@ Time limit: 45 min
 
 ### Charter 1
 
-I missed that the currency couldn't be displayed using the currency default decimal separator. For instance, 100 Brazilian reais are expressed as R$100.00,00, but this doesn't happen in the app.
+I missed that the currency couldn't be displayed using the currency default decimal separator. For instance, 100 Brazilian reais are expressed as R$100,00, but this doesn't happen in the app.
 
 ### Charter 2 & 3
 No relevant findings
